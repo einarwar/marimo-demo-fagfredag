@@ -10,7 +10,8 @@
 				"marimo-team.vscode-marimo",
 				"charliermarsh.ruff",
 				"ms-python.vscode-pylance",
-				"ms-python.python"
+				"ms-python.python",
+				"ms-toolsai.jupyter"
 			]
 		}
 	}
