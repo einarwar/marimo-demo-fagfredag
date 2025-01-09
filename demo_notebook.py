@@ -1,7 +1,10 @@
 import marimo
 
 __generated_with = "0.10.9"
-app = marimo.App(width="medium")
+app = marimo.App(
+    width="medium",
+    layout_file="layouts/demo_notebook.slides.json",
+)
 
 
 @app.cell
@@ -32,15 +35,17 @@ def _(mo):
 
 @app.cell
 def _(mo):
-    mo.md("""
-    # Hva er en notebook?
-    * Interaktiv verktøy for koding. 
-    * Fleksibel, celle-basert innholdsstruktur
-    * Kombinere tekst og kode
-    * Bruksområder:
-        * Dataanalyse og visualisering
-        * Prototyping
-    """)
+    mo.md(
+        """
+        # Hva er en notebook?
+        * Interaktiv verktøy for koding. 
+        * Fleksibel, celle-basert innholdsstruktur
+        * Kombinere tekst og kode
+        * Bruksområder:
+            * Dataanalyse og visualisering
+            * Prototyping
+        """
+    )
     return
 
 
@@ -97,12 +102,14 @@ def _(mo):
 
 @app.cell
 def _(mo):
-    mo.md("""
-    # Hvordan kjøres Marimo notebooks?
-    * References / `refs`: Globale variable cellen leser men ikke definerer selv
-    * Definitions / `defs`: Globale variabler cellen definerer
-    * `refs` og `defs` lager en DAG som bestemmer rekkefølge på celle-eksekvering
-    """)
+    mo.md(
+        """
+        # Hvordan kjøres Marimo notebooks?
+        * References / `refs`: Globale variable cellen leser men ikke definerer selv
+        * Definitions / `defs`: Globale variabler cellen definerer
+        * `refs` og `defs` lager en DAG som bestemmer rekkefølge på celle-eksekvering
+        """
+    )
     return
 
 
@@ -122,13 +129,15 @@ def _(mo):
 
 @app.cell
 def _(mo):
-    mo.md("""
-    # Demo
+    mo.md(
+        """
+        # Demo
 
-    * [Widgets / UI elementer](https://marimo.app/?slug=ia3872)
-    * [Plotting](https://marimo.app/?slug=lxp1jk#)
-    * [Layout](https://marimo.app/?slug=14ovyr)
-    """)
+        * [Widgets / UI elementer](https://marimo.app/?slug=ia3872)
+        * [Plotting](https://marimo.app/?slug=lxp1jk#)
+        * [Layout](https://marimo.app/?slug=14ovyr)
+        """
+    )
     return
 
 
